@@ -1,12 +1,13 @@
+cat index.js
 import express from "express";
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8007;
 
 app.get("/", (req, res) => {
   res.send("Hello, World! From the Server");
 });
 
-app.listen(PORT, () => {
+app.listen(PORT,'0.0.0.0', () => {
   console.log(`Server is running on ${PORT}`);
 });
