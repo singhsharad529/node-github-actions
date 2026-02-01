@@ -1,4 +1,3 @@
-cat index.js
 import express from "express";
 
 const app = express();
@@ -8,6 +7,6 @@ app.get("/", (req, res) => {
   res.send("Hello, World! From the Server");
 });
 
-app.listen(PORT,'0.0.0.0', () => {
-  console.log(`Server is running on ${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`v1 Server is running on ${PORT}`);
 });
