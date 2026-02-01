@@ -18,7 +18,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: winter
           key: ${{ secrets.SSH_KEY }}
-          scripts: |
+          script: |
             cd /home/winter/node-github-actions
             git pull
             docker-compose up -d --build
